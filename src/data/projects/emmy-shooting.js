@@ -1,0 +1,53 @@
+import { photo } from '../../lib/media';
+
+const slug = 'emmy-shooting';
+const p = (name, width, height) => photo(`${slug}/${name}`, width, height);
+const cover = p('cover', 1920, 2557);
+
+export default {
+  id: slug,
+  title: 'Emmy Shooting',
+  slug,
+  category: 'Auto / Moto',
+  year: '2026',
+  client: '',
+  location: '',
+  description: '',
+  sourceUrl: 'https://evastrephotographie.myportfolio.com/emmy-shooting',
+  featured: true,
+  order: 3,
+  galleryLayout: 'editorial',
+  coverImage: cover,
+  heroMedia: p('01', 1536, 1024),
+  images: [
+    p('01', 1536, 1024),
+    p('02', 1536, 1024),
+    p('03', 1536, 1024),
+    p('04', 1023, 1537),
+    p('05', 1023, 1537),
+    p('06', 1023, 1537),
+    p('07', 1024, 1536),
+    p('08', 982, 1475),
+    p('09', 3840, 5760),
+    p('10', 3840, 5760),
+    p('11', 3840, 5760),
+    p('12', 1920, 2880),
+    p('13', 1920, 2880),
+    p('14', 1920, 2880),
+    p('15', 1920, 2880),
+    p('16', 1920, 2880),
+    p('17', 3840, 5760),
+    p('18', 3840, 5760),
+    p('19', 1920, 2880),
+    p('20', 1920, 2880),
+    p('21', 3840, 5760),
+    p('22', 3840, 5760),
+    p('23', 3840, 5760),
+    p('24', 3840, 5760),
+    p('25', 1920, 2880),
+    p('26', 1920, 2880),
+    p('27', 1920, 2880),
+  ],
+  videos: [],
+  credits: [],
+};

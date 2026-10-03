@@ -1,0 +1,50 @@
+import { photo } from '../../lib/media';
+
+const slug = 'emma-june-shooting';
+const p = (name, width, height) => photo(`${slug}/${name}`, width, height);
+const cover = p('cover', 1024, 1363);
+
+export default {
+  id: slug,
+  title: 'Emma & June Shooting',
+  slug,
+  category: 'Portrait',
+  year: '2026',
+  client: '',
+  location: '',
+  description: '',
+  sourceUrl: 'https://evastrephotographie.myportfolio.com/emma-june-shooting',
+  featured: true,
+  order: 4,
+  galleryLayout: 'editorial',
+  coverImage: cover,
+  heroMedia: cover,
+  images: [
+    p('01', 1024, 1536),
+    p('02', 1022, 1539),
+    p('03', 1023, 1537),
+    p('04', 3840, 5760),
+    p('05', 1920, 2880),
+    p('06', 1920, 2880),
+    p('07', 3840, 5760),
+    p('08', 3840, 5760),
+    p('09', 1920, 2880),
+    p('10', 1920, 2880),
+    p('11', 3840, 5760),
+    p('12', 3840, 5760),
+    p('13', 3840, 5760),
+    p('14', 3840, 5760),
+    p('15', 3840, 5760),
+    p('16', 3840, 5760),
+    p('17', 1920, 2880),
+    p('18', 3840, 5760),
+    p('19', 3840, 5760),
+    p('20', 3840, 5760),
+    p('21', 3840, 5760),
+    p('22', 3840, 5760),
+    p('23', 1920, 2880),
+    p('24', 3840, 5760),
+  ],
+  videos: [],
+  credits: [],
+};

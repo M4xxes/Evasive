@@ -1,0 +1,53 @@
+import { photo } from '../../lib/media';
+
+const slug = 'mornantxpress';
+const p = (name, width, height) => photo(`${slug}/${name}`, width, height);
+const cover = p('cover', 3840, 5114);
+
+export default {
+  id: slug,
+  title: "Mornant'Xpress",
+  slug,
+  category: 'Événementiel',
+  year: '2026',
+  client: '',
+  location: '',
+  description: '',
+  sourceUrl: 'https://evastrephotographie.myportfolio.com/mornantxpress',
+  featured: true,
+  order: 2,
+  galleryLayout: 'grid',
+  coverImage: cover,
+  heroMedia: cover,
+  images: [
+    p('01', 3840, 5760),
+    p('02', 3840, 5760),
+    p('03', 3840, 5760),
+    p('04', 1920, 2880),
+    p('05', 1920, 2880),
+    p('06', 3840, 5760),
+    p('07', 3840, 5760),
+    p('08', 3840, 5760),
+    p('09', 1920, 2880),
+    p('10', 1920, 2880),
+    p('11', 1920, 2880),
+    p('12', 3840, 5760),
+    p('13', 1920, 2880),
+    p('14', 1920, 2880),
+    p('15', 3840, 5760),
+    p('16', 3840, 5760),
+    p('17', 1920, 2880),
+    p('18', 1920, 2880),
+    p('19', 1920, 2880),
+    p('20', 1920, 2880),
+    p('21', 1920, 2880),
+    p('22', 1920, 2880),
+    p('23', 1920, 2880),
+    p('24', 3840, 5760),
+    p('25', 1920, 2880),
+    p('26', 1920, 2880),
+    p('27', 3840, 5760),
+  ],
+  videos: [],
+  credits: [],
+};

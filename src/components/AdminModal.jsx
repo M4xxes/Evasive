@@ -4,7 +4,7 @@ import { X, Plus, Trash2 } from 'lucide-react';
 const emptyProject = {
   title: '',
   slug: '',
-  category: 'Editorial',
+  category: 'Portrait',
   year: new Date().getFullYear().toString(),
   client: '',
   description: '',
@@ -41,7 +41,8 @@ export default function AdminModal({ projects, setProjects, onClose }) {
         order: prev.length + 1,
         images: [form.coverImage],
         heroMedia: { type: 'image', url: form.coverImage },
-        credits: [{ role: 'Photographer', name: 'Eva Masson' }],
+        videos: [],
+        credits: [],
       },
     ]);
     setForm(emptyProject);
